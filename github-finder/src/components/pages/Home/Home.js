@@ -18,13 +18,8 @@ const Home = () => {
         </div>
       </div>
       <div className='search-results'>
-        <div className='user'>
-          <div className='user__image'></div>
-          <div className='user__info'>
-            <h4>Name</h4>
-            <a href='#'>View</a>
-          </div>
-        </div>
+        <div className='search-results__img'></div>
+        <div>Start with searching a GitHub user</div>
       </div>
     </div>
   );
