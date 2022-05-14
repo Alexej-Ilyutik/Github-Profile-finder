@@ -1,9 +1,16 @@
 import './App.scss';
 import Home from './components/pages/Home/Home';
+import User from './components/pages/User/User';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Home/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/user' element={<User />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
