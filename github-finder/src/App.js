@@ -1,10 +1,9 @@
-import './App.css';
+import './App.scss';
+import Home from './components/pages/Home/Home';
 
 function App() {
   return (
-    <div className="container">
-     <h1>Hello World</h1>
-    </div>
+    <Home/>
   );
 }
 
