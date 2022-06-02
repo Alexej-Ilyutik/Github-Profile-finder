@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from '../Header/Header';
 // import User from '../../ui/User';
-import './Main.scss';
+import './User.scss';
 import avatar from '../../../assets/image.jpg';
 
-const Main = () => {
+const User = () => {
   return (
     <div className='container'>
       <Header />
@@ -76,4 +76,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default User;

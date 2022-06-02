@@ -7,6 +7,7 @@
   --text-modal: #000;
   --bg-color: rgba(0, 0, 0, 0.25);
   --main-color: rgb(69, 78, 105);
+  --second-color: rgb(101, 119, 179);
   --btn-color: rgb(43, 166, 121);
   --btn-color-hov: rgb(76, 195, 151);
 }
@@ -17,7 +18,6 @@
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
   color: var(--text-color);
 }
 
@@ -28,9 +28,4 @@
   margin: 0 auto;
   background-color: var(--bg-color);
   @include flex-column;
-}
-
-h2 {
-  font-size: 2rem;
-  color: brown;
 }

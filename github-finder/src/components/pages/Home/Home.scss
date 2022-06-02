@@ -4,6 +4,9 @@
   flex: 1 1 auto;
   @include flex-column;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .search-wrapper {
@@ -19,10 +22,9 @@
   @include flex-column;
   gap: 5rem;
   h3 {
-    font-size: 3rem;
+    @include text-size(3rem, 700);
     max-width: 60rem;
     text-align: center;
-    font-weight: 700;
   }
 }
 
@@ -35,26 +37,14 @@
     height: 5rem;
     border: none;
     border-radius: 0.6rem;
-    font-size: 2.5rem;
+    @include text-size(2.5rem);
     line-height: 5rem;
     padding-left: 2rem;
     margin: 0 auto;
     color: var(--text-modal);
   }
   .search-form__btn {
-    width: 15rem;
-    border-radius: 0.6rem;
-    border: 0;
     margin: 0 auto;
-    height: 5rem;
-    font-size: 2.5rem;
-    font-weight: 700;
-    background-color: var(--btn-color);
-    cursor: pointer;
-    transition: .5s ease-in-out;
-    &:hover{
-      transform: scale(1.05);
-      background-color: var(--btn-color-hov);
-    }
+    @include btn-style;
   }
 }
