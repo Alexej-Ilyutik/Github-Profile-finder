@@ -1,9 +1,12 @@
 .header {
   background-color: var(--main-color);
+  height: 9rem;
+  line-height: 9rem;
+  text-align: center;
   h1 {
-    display: block;
-    font-size: 3rem;
-    text-align: center;
-    margin: 0.6rem 0;
+    font-size: 4rem;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
   }
 }

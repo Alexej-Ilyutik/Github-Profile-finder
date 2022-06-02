@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './Header.scss';
-import logo from '../../../assets/GitHub.svg';
 import axios from '../../../axios';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 const Header = () => {
   const [user, setQuery] = useState('');
