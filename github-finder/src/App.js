@@ -1,7 +1,7 @@
 import './App.scss';
 import Home from './components/pages/Home/Home';
-import User from './components/pages/User/User';
-import Empty from './components/pages/EmptyState/Empty';
+// import Main from './components/pages/Main/Main';
+// import Empty from './components/pages/EmptyState/Empty';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/user' element={<User />} />
-        <Route path='/empty' element={<Empty />} />
+        {/* <Route path='/main' element={<Main />} />
+        <Route path='/empty' element={<Empty />} /> */}
       </Routes>
     </BrowserRouter>
   );

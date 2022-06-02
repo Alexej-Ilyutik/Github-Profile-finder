@@ -8,7 +8,7 @@ const Empty = () => {
       <Header />
       <div className='search-results-empty'>
         <div className='search-results-empty__img'></div>
-        <div>User not found</div>
+        <p>User not found</p>
       </div>
     </div>
   );

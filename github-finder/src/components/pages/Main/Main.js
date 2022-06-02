@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from '../Header/Header';
-import './User.scss';
+// import User from '../../ui/User';
+import './Main.scss';
 import avatar from '../../../assets/image.jpg';
 
-const User = () => {
+const Main = () => {
   return (
     <div className='container'>
       <Header />
+      {/* <User /> */}
       <div className='search-res'>
         <aside className='user'>
           <div className='user__img'>
@@ -74,4 +76,4 @@ const User = () => {
   );
 };
 
-export default User;
+export default Main;
