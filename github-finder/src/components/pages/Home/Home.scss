@@ -8,7 +8,7 @@
 
 .search-wrapper {
   background-color: var(--main-color);
-  padding: 7rem 5rem;
+  padding: 5rem 5rem;
   border-radius: 1rem;
   position: absolute;
   top: 45%;
@@ -17,7 +17,7 @@
 
 .search-form {
   @include flex-column;
-  gap: 2rem;
+  gap: 5rem;
   h3 {
     font-size: 3rem;
     max-width: 60rem;
@@ -28,7 +28,7 @@
 
 .search-form__container {
   @include flex-column;
-  gap: 2rem;
+  gap: 3rem;
   .search-form__input {
     width: 50rem;
     min-width: 25rem;
@@ -39,15 +39,22 @@
     line-height: 5rem;
     padding-left: 2rem;
     margin: 0 auto;
-    color: var(--text-modal)
+    color: var(--text-modal);
   }
-  .search-form__btn{
+  .search-form__btn {
     width: 15rem;
     border-radius: 0.6rem;
     border: 0;
     margin: 0 auto;
-     height: 5rem;
-    font-size: 2rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
     background-color: var(--btn-color);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    &:hover{
+      transform: scale(1.05);
+      background-color: var(--btn-color-hov);
+    }
   }
 }

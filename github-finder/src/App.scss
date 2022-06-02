@@ -1,5 +1,26 @@
 @import './components/style.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --text-color: #fff;
+  --text-modal: #000;
+  --bg-color: rgba(0, 0, 0, 0.25);
+  --main-color: rgb(69, 78, 105);
+  --btn-color: rgb(43, 166, 121);
+  --btn-color-hov: rgb(76, 195, 151);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
 .container {
   min-width: 1000px;
   width: 100vw;
