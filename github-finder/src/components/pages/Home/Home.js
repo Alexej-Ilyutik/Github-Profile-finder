@@ -2,7 +2,6 @@ import React from 'react';
 import './Home.scss';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import logo from '../../../assets/GitHub.svg';
 
 const Home = () => {
   return (
@@ -11,25 +10,21 @@ const Home = () => {
       <main className='main'>
         <div className='search-wrapper'>
           <div className='search-form'>
-            <div className='search-form__logo'>
-              <img src={logo} alt='Logo' />
-            </div>
-            <form>
+            <h3>
+              Check out the repos, followers and more, just by entering a
+              username:
+            </h3>
+            <form className='search-form__container'>
               <input
                 className='search-form__input'
                 type='text'
                 placeholder='Enter GitHub username'
               />
-              <button>Search</button>
+              <button className='search-form__btn'>Search</button>
             </form>
           </div>
         </div>
       </main>
-
-      {/* <div className='search-results'>
-        <div className='search-results__img'></div>
-        <p>Start with searching a GitHub user</p>
-      </div> */}
       <Footer />
     </div>
   );
