@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-// import User from '../../ui/User';
 import './User.scss';
 import avatar from '../../../assets/image.jpg';
 
@@ -20,6 +19,10 @@ const User = () => {
               <a href='#'>
                 <h4>gaearon</h4>
               </a>
+              <div className='user__location location'>
+                <div className='location__img'></div>
+                <div className='location__text'>Africa</div>
+              </div>
               <div className='user__info info'>
                 <div className='info__wrapper'>
                   <div className='info__img followers'></div>

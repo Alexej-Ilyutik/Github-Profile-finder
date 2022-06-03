@@ -21,14 +21,14 @@
       object-fit: cover;
     }
   }
-  &__content h3 {
-    @include text-size(3rem);
-    line-height: 3.4rem;
-    margin-bottom: 1.2rem;
-    color: var(--main-color);
-  }
   &__content {
-     @include flex-column;
+    @include flex-column;
+    h3 {
+      @include text-size(3rem);
+      line-height: 3.4rem;
+      margin-bottom: 1.2rem;
+      color: var(--main-color);
+    }
     a {
       text-decoration: none;
       h4 {
@@ -36,6 +36,23 @@
         @include text-size(2rem);
         line-height: 2.2rem;
         color: var(--second-color);
+      }
+    }
+    .user__location {
+      display: flex;
+      margin-bottom: 2rem;
+      align-items: center;
+      .location__img {
+        width: 2.2rem;
+        height: 3.5rem;
+        object-fit: cover;
+        margin-right: 0.8rem;
+        background: url('../../../assets/icon-marker.svg') no-repeat center center;
+      }
+      .location__text{
+         @include text-size(3rem);
+        line-height: 2.4rem;
+        color: var(--main-color);
       }
     }
   }
