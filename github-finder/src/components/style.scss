@@ -9,11 +9,11 @@
 }
 
 @mixin btn-style {
-  width: 15rem;
-  height: 5rem;
+  width: 12rem;
+  height: 4rem;
   border-radius: 0.6rem;
   border: 0;
-  @include text-size(2.5rem, 700);
+  @include text-size(2rem, 700);
   background-color: var(--btn-color);
   cursor: pointer;
   transition: 0.5s ease-in-out;

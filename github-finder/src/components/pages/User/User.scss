@@ -1,5 +1,7 @@
+@import '../../style.scss';
+
 .search-res {
-  width: 125.4rem;
+  width: 125rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -20,18 +22,21 @@
     }
   }
   &__content h3 {
-    font-weight: 500;
-    font-size: 2.6rem;
+    @include text-size(3rem);
     line-height: 3.4rem;
     margin-bottom: 1.2rem;
+    color: var(--main-color);
   }
-  &__content a {
-    color: #0064eb;
-    text-decoration: none;
-    h4 {
-      margin-bottom: 3rem;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
+  &__content {
+     @include flex-column;
+    a {
+      text-decoration: none;
+      h4 {
+        margin-bottom: 3rem;
+        @include text-size(2rem);
+        line-height: 2.2rem;
+        color: var(--second-color);
+      }
     }
   }
 
@@ -58,8 +63,9 @@
       }
       .info__value,
       .info__text {
-        font-size: 1.6rem;
+        @include text-size(1.6rem);
         line-height: 2.4rem;
+        color: var(--main-color);
       }
 
       .info__value {
@@ -67,41 +73,45 @@
       }
     }
   }
+  &__btn {
+    @include btn-style;
+    margin-top: 6rem;
+  }
 }
 
 .repo {
   width: 87.7rem;
   margin-top: 2.8rem;
   &__title {
-    font-weight: 700;
-    font-size: 3.2rem;
+    @include text-size(3.6rem, 700);
     line-height: 4.2rem;
     margin-bottom: 2.9rem;
+    color: var(--main-color);
     span {
-      font-weight: 700;
-      font-size: 3.2rem;
       line-height: 4.2rem;
+      @include text-size(3.6rem, 700);
+      color: var(--main-color);
     }
   }
   &__container {
-    background-color: #fff;
+    background-color: var(--bg-color2);
     border-radius: 0.6rem;
     width: 100%;
     padding: 2.4rem 3.2rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.8rem;
     .repo__name {
-      color: #0064eb;
       text-decoration: none;
       h4 {
         margin-bottom: 1.6rem;
-        font-size: 2.4rem;
+        @include text-size(3rem, 700);
         line-height: 2.9rem;
-        font-weight: 500;
+        color: var(--main-color);
       }
     }
     .repo__description {
-      font-size: 1.6rem;
-      line-height: 1.9rem;
+      @include text-size(1.8rem);
+      line-height: 2rem;
+      color: var(--main-color);
     }
   }
   &__pagination {
