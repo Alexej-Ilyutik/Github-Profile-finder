@@ -17,7 +17,7 @@ const User = ({user}) => {
       </div>
       <div className='search-result__info'>
         <h3>{login}</h3>
-        <h4>{id}</h4>
+        <h4>ID: {id}</h4>
         <div className='search-result__repo'>
           <div className='repo__text'>Repositories -</div>
           <div className='repo__value'>65.8K</div>

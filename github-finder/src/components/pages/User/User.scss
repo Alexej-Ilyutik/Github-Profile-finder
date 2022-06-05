@@ -29,8 +29,8 @@
       margin-bottom: 1.2rem;
       color: var(--main-color);
     }
-    a {
-      text-decoration: none;
+    .user__page {
+      color: var(--second-color);
       h4 {
         margin-bottom: 3rem;
         @include text-size(2rem);
@@ -47,10 +47,11 @@
         height: 3.5rem;
         object-fit: cover;
         margin-right: 0.8rem;
-        background: url('../../../assets/icon-marker.svg') no-repeat center center;
+        background: url('../../../assets/icon-marker.svg') no-repeat center
+          center;
       }
-      .location__text{
-         @include text-size(3rem);
+      .location__text {
+        @include text-size(3rem);
         line-height: 2.4rem;
         color: var(--main-color);
       }
@@ -93,6 +94,9 @@
   &__btn {
     @include btn-style;
     margin-top: 6rem;
+    text-align: center;
+    line-height: 4rem;
+    text-decoration: none;
   }
 }
 
@@ -129,6 +133,9 @@
       @include text-size(1.8rem);
       line-height: 2rem;
       color: var(--main-color);
+      small{
+        color: var(--main-color);
+      }
     }
   }
   &__pagination {
