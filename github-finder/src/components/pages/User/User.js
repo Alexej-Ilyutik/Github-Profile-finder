@@ -84,7 +84,7 @@ const User = () => {
                 return <Repo repo={repo} key={repo.id} />;
               })
             ) : (
-              <h2>No repos for this user...</h2>
+              <h2 className='repo__info'>No repos for this user...</h2>
             )}
           </article>
         </div>

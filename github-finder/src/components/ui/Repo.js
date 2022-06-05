@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Repo = ({ repo }) => {
-  console.log(repo);
   const {
     name,
     html_url,
@@ -16,7 +15,7 @@ const Repo = ({ repo }) => {
       </a>
       <p className='repo__description'>{description}</p>
       <p className='repo__description'>
-        {language && <small>Written in {language}</small>}
+        {language && <span>Written in {language}</span>}
       </p>
     </section>
   );

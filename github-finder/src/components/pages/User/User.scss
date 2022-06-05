@@ -48,7 +48,7 @@
         @include text-size(3rem);
         line-height: 3.4rem;
         color: var(--main-color);
-        img{
+        img {
           margin-right: 0.8rem;
         }
       }
@@ -127,9 +127,11 @@
     }
     .repo__description {
       @include text-size(2rem);
-      line-height: 2rem;
+      line-height: 2.6rem;
       color: var(--main-color);
-      small{
+      margin-bottom: 1rem;
+      span {
+        @include text-size(1.6rem);
         color: var(--main-color);
       }
     }
@@ -144,12 +146,17 @@
   }
 }
 
+.repo__info {
+  @include text-size(5rem, 700);
+  margin-top: 3rem;
+}
+
 @media screen and (max-width: 768px) {
-    .search-res {
+  .search-res {
     flex-direction: column;
     padding: 0 1.5rem;
   }
   .repo__container {
-    padding: .6rem 1rem;
+    padding: 0.6rem 1rem;
   }
 }
