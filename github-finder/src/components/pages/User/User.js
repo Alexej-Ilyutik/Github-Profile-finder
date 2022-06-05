@@ -5,6 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import axios from '../../../axios';
 import './User.scss';
 import Repo from '../../ui/Repo';
+import location from '../../../assets/icon-marker.svg';
 
 const User = () => {
   const { login } = useParams();
@@ -27,7 +28,7 @@ const User = () => {
       }
     };
     fetchUserInformation();
-  }, []);
+  }, [login]);
 
   return (
     <div className='container'>
@@ -49,8 +50,12 @@ const User = () => {
                 <h4>{userInfo?.login}</h4>
               </a>
               <div className='user__location location'>
-                <div className='location__img'></div>
-                <div className='location__text'>{userInfo?.location}</div>
+                {userInfo?.location && (
+                  <p className='location__text'>
+                    <img src={location} alt='' />
+                    {userInfo?.location}
+                  </p>
+                )}
               </div>
               <div className='user__info info'>
                 <div className='info__wrapper'>
@@ -72,7 +77,7 @@ const User = () => {
           </aside>
           <article className='repo'>
             <h2 className='repo__title'>
-              Repositories &#40;<span>249</span>&#41;
+              Repositories &#40;<span>{userInfo?.public_repos}</span>&#41;:
             </h2>
             {repos ? (
               repos.map((repo) => {

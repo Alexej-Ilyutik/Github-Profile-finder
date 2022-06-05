@@ -1,7 +1,14 @@
 import React from 'react';
 
 const Repo = ({ repo }) => {
-  const { name, html_url, description, language } = repo;
+  console.log(repo);
+  const {
+    name,
+    html_url,
+    description,
+    language
+  } = repo;
+
   return (
     <section className='repo__container'>
       <a href={html_url} className='repo__name'>

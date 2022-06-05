@@ -1,14 +1,16 @@
 @import '../../style.scss';
 
 .search-res {
-  width: 125rem;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  gap: 4%;
+  padding: 0 2rem;
+  // flex-wrap: wrap;
 }
 
 .user {
-  margin-top: 4rem;
+  margin-top: 6rem;
+  max-width: 28rem;
   &__img {
     width: 28rem;
     height: 28rem;
@@ -32,7 +34,7 @@
     .user__page {
       color: var(--second-color);
       h4 {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         @include text-size(2rem);
         line-height: 2.2rem;
         color: var(--second-color);
@@ -42,18 +44,13 @@
       display: flex;
       margin-bottom: 2rem;
       align-items: center;
-      .location__img {
-        width: 2.2rem;
-        height: 3.5rem;
-        object-fit: cover;
-        margin-right: 0.8rem;
-        background: url('../../../assets/icon-marker.svg') no-repeat center
-          center;
-      }
       .location__text {
         @include text-size(3rem);
-        line-height: 2.4rem;
+        line-height: 3.4rem;
         color: var(--main-color);
+        img{
+          margin-right: 0.8rem;
+        }
       }
     }
   }
@@ -61,7 +58,7 @@
   &__info {
     display: flex;
     justify-content: space-between;
-    width: 29.2rem;
+    width: 100%;
     .info__wrapper {
       display: flex;
       justify-content: space-between;
@@ -70,7 +67,7 @@
         width: 2.4rem;
         height: 2.4rem;
         object-fit: cover;
-        margin-right: 0.8rem;
+        margin-right: 0.6rem;
       }
 
       .followers {
@@ -101,7 +98,6 @@
 }
 
 .repo {
-  width: 87.7rem;
   margin-top: 2.8rem;
   &__title {
     @include text-size(3.6rem, 700);
@@ -118,19 +114,19 @@
     background-color: var(--bg-color2);
     border-radius: 0.6rem;
     width: 100%;
-    padding: 2.4rem 3.2rem;
+    padding: 2rem 2.6rem;
     margin-bottom: 1.8rem;
     .repo__name {
       text-decoration: none;
       h4 {
         margin-bottom: 1.6rem;
-        @include text-size(3rem, 700);
+        @include text-size(2.6rem, 700);
         line-height: 2.9rem;
         color: var(--main-color);
       }
     }
     .repo__description {
-      @include text-size(1.8rem);
+      @include text-size(2rem);
       line-height: 2rem;
       color: var(--main-color);
       small{
@@ -145,5 +141,15 @@
     color: #808080;
     width: 28rem;
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .search-res {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+  .repo__container {
+    padding: .6rem 1rem;
   }
 }

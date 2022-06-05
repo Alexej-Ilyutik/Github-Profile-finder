@@ -9,19 +9,10 @@ const User = ({user}) => {
         <div className='search-result__image'>
           <img src={avatar_url} alt='Avatar' />
         </div>
-        <div className='search-result__followers'>
-          <div className='followers__img'></div>
-          <div className='followers__value'>65.8K</div>
-          <div className='followers__text'>followers</div>
-        </div>
       </div>
       <div className='search-result__info'>
-        <h3>{login}</h3>
+        <h3>Login: <span>{login}</span></h3>
         <h4>ID: {id}</h4>
-        <div className='search-result__repo'>
-          <div className='repo__text'>Repositories -</div>
-          <div className='repo__value'>65.8K</div>
-        </div>
         <Link to={`/user/${login}`}>View profile</Link>
       </div>
     </div>
